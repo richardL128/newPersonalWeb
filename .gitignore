@@ -1,0 +1,27 @@
+# Private local instructions (not checked in)
+CLAUDE.local.md
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies & build output
+node_modules
+dist
+dist-ssr
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / editor
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json
+*.sw?

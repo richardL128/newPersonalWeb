@@ -1,0 +1,3 @@
+{
+  "rewrites": [{ "source": "/((?!resume\\.pdf|projects/).*)", "destination": "/index.html" }]
+}
