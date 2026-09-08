@@ -1,0 +1,21 @@
+version: 1
+applications:
+  # The React app lives in portfolio/, not at the repo root.
+  # appRoot makes every command below run from inside that folder.
+  - appRoot: portfolio
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - npm ci
+        build:
+          commands:
+            - npm run build
+      artifacts:
+        # Paths are relative to appRoot, so this is portfolio/dist
+        baseDirectory: dist
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
